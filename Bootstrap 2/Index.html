@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stil och Ikon</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navbar --> 
+<header>
+<nav class="navbar bg-white border-bottom py-2">
+<div class="container d-flex align-items-center">
+
+<!-- Hamburgemeny --> 
+<button
+class="btn d-md-none p-0"
+type="button"
+data-bs-toggle="offcanvas"
+data-bs-target="#mobileMenu"
+aria-controls="mobileMenu"
+aria-label="Öppna meny">
+<i class="bi bi-list fs-2"></i>
+</button>
+
+<!-- Logga --> 
+<a class="navbar-brand fw-bold m-0 mx-auto mx-md-0" href="#">STIL OCH IKON</a>
+
+<!-- Meny för desktop --> 
+<ul class="navbar-nav flex-row gap-3 ms-auto d-none d-md-flex">
+<li class="nav-item"><a class="nav-link" href="#">Dam</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Herr</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Barn</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+</ul>
+<!-- Ikoner --> 
+<div class="d-flex gap-3 align-items-center ms-3">
+<a href="#" class="text-dark fs-5" aria-label="Varukorg"><i class="bi bi-cart-fill"></i></a>
+<a href="#" class="text-dark fs-5" aria-label="Favoriter"><i class="bi bi-suit-heart-fill"></i></a>
+<a href="#" class="text-dark fs-5" aria-label="Profil"><i class="bi bi-person-fill"></i></a>
+</div>
+    
+</div>
+</nav>
+</header>
+
+<!-- Sökruta för mobilversion --> 
+<div class="container my-3 d-md-none">
+<div class="input-group">
+<span class="input-group-text bg-light border-0">
+<i class="bi bi-search"></i>
+</span>
+<input
+type="search"
+class="form-control bg-light border-0"
+placeholder="Sök produkter..."
+aria-label="Sök produkter">
+</div>
+</div>
+
+<!--  Mobilmeny --> 
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+<div class="offcanvas-header border-bottom">
+<h5 class="offcanvas-title" id="mobileMenuLabel">Meny</h5>
+<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Stäng"></button>
+</div>
+<div class="offcanvas-body">
+<nav class="nav flex-column gap-3 fs-5">
+<a class="nav-link text-dark" href="#">Butik</a>
+<a class="nav-link text-dark" href="#">Nyheter</a>
+<a class="nav-link text-dark" href="#">Rea</a>
+<a class="nav-link text-dark" href="#">Om oss</a>
+</nav>
+</div>
+</div>
+
+
+<!-- Main -->  
+
+<main>
+
+<!-- Hero -->
+<section class="container py-4 py-md-5">
+<div class="row align-items-center g-4 g-md-5">
+
+
+<div class="col-12 col-md-6 order-1 order-md-2">
+<img src="img/hero.jpg" alt="Vårkollektion 2026" class="img-fluid rounded">
+</div>
+
+
+<div class="col-12 col-md-6 order-2 order-md-1">
+<h1 class="mb-3">Hitta din stil</h1>
+<p class="mb-4">Kika in våra nyheter och trender för våren 2026.</p>
+<a href="#" class="btn btn-dark">Shoppa här</a>
+</div>
+
+</div>
+</section>
+
+<section class="container mb-4">
+<div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+<button class="btn btn-dark rounded-pill">Alla</button>
+<button class="btn btn-light rounded-pill">Klockor</button>
+<button class="btn btn-light rounded-pill">Skor</button>
+<button class="btn btn-light rounded-pill">Väskor</button>
+<button class="btn btn-light rounded-pill">Accessoarer</button>
+</div>
+</section>
+
+<!-- Produktbilder  --> 
+<section class="container my-5">
+<h2 class="mb-4">Utvalda produkter</h2>
+
+<div class="row g-4">
+
+<!-- Bild 1 --> 
+<div class="col-12 col-md-4">
+<div class="card border-0 h-100">
+<div class="ratio ratio-4x3">
+<img src="img/bild1.jpg" class="w-100 h-100 object-fit-cover rounded" alt="Barnhoodie">
+</div>
+<div class="card-body px-0">
+<h3 class="h6 mb-1">Barnhoodie</h3>
+<p class="fw-semibold mb-0">399 kr</p>
+</div>
+</div>
+</div>
+
+<!--  Bild 2 --> 
+<div class="col-12 col-md-4">
+<div class="card border-0 h-100">
+<div class="ratio ratio-4x3">
+<img src="img/bild2.jpg" class="w-100 h-100 object-fit-cover rounded" alt="Ryggsäck">
+</div>
+<div class="card-body px-0">
+<h3 class="h6 mb-1">Ryggsäck</h3>
+<p class="fw-semibold mb-0">799 kr</p>
+</div>
+</div>
+</div>
+
+<!-- Bild 3 --> 
+<div class="col-12 col-md-4">
+<div class="card border-0 h-100">
+<div class="ratio ratio-4x3">
+<img src="img/bild3.jpg" class="w-100 h-100 object-fit-cover rounded" alt="Sommarset">
+</div>
+<div class="card-body px-0">
+<h3 class="h6 mb-1">Sommarset</h3>
+<p class="fw-semibold mb-0">649 kr</p>
+</div>
+</div>
+</div>
+
+<!-- Bild 4 --> 
+<div class="col-12 col-md-4">
+<div class="card border-0 h-100">
+<div class="ratio ratio-4x3">
+<img src="img/bild4.jpg" class="w-100 h-100 object-fit-cover rounded" alt="Accessoar">
+</div>
+<div class="card-body px-0">
+<h3 class="h6 mb-1">Accessoar</h3>
+<p class="fw-semibold mb-0">Från 199 kr</p>
+</div>
+</div>
+</div>
+
+<!-- Bild 5 --> 
+<div class="col-12 col-md-4">
+<div class="card border-0 h-100">
+<div class="ratio ratio-4x3">
+<img src="img/bild5.jpg" class="w-100 h-100 object-fit-cover rounded"
+    
+style="object-position: 100% 75%;"
+alt="T-shirt">
+</div>
+<div class="card-body px-0">
+<h3 class="h6 mb-1">T-shirt</h3>
+<p class="fw-semibold mb-0">399 kr</p>
+</div>
+</div>
+</div>
+
+<!-- Bild 6 --> 
+<div class="col-12 col-md-4">
+<div class="card border-0 h-100">
+<div class="ratio ratio-4x3">
+<img src="img/bild6.jpg" class="w-100 h-100 object-fit-cover rounded" alt="Sneakers">
+</div>
+<div class="card-body px-0">
+<h3 class="h6 mb-1">Sneakers</h3>
+<p class="fw-semibold mb-0">1 299 kr</p>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+ 
+<!-- Erbjudande-box --> 
+<section class="container my-5">
+<div class="bg-dark text-white text-center py-5 rounded-4">
+<h2 class="mb-2">Specialerbjudande</h2>
+<p class="mb-4">Få 20% rabatt på din första beställning</p>
+<a href="#" class="btn btn-light px-4">Hämta nu</a>
+</div>
+</section>
+
+</main>
+
+<!-- Footer --> 
+<footer class="bg-light py-5 border-top">
+  <div class="container">
+<div class="row g-4 text-center text-md-start">
+
+<div class="col-6 col-md-3 mb-4 mb-md-0">
+<h6 class="fw-bold">Butik</h6>
+<a href="#" class="d-block text-muted text-decoration-none">Alla produkter</a>
+<a href="#" class="d-block text-muted text-decoration-none">Nyheter</a>
+<a href="#" class="d-block text-muted text-decoration-none">Rea</a>
+</div>
+
+<div class="col-6 col-md-3 mb-4 mb-md-0">
+<h6 class="fw-bold">Om oss</h6>
+<a href="#" class="d-block text-muted text-decoration-none">Vår historia</a>
+<a href="#" class="d-block text-muted text-decoration-none">Karriär</a>
+<a href="#" class="d-block text-muted text-decoration-none">Kontakt</a>
+</div>
+
+<div class="col-6 col-md-3 mb-4 mb-md-0">
+<h6 class="fw-bold">Hjälp</h6>
+<a href="#" class="d-block text-muted text-decoration-none">Frakt</a>
+<a href="#" class="d-block text-muted text-decoration-none">Returer</a>
+<a href="#" class="d-block text-muted text-decoration-none">FAQ</a>
+</div>
+
+<div class="col-6 col-md-3">
+<h6 class="fw-bold">Följ oss</h6>
+<a href="#" class="d-block text-muted text-decoration-none">Instagram</a>
+<a href="#" class="d-block text-muted text-decoration-none">Facebook</a>
+<a href="#" class="d-block text-muted text-decoration-none">Twitter</a>
+</div>
+
+</div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
